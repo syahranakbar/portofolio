@@ -1,0 +1,361 @@
+@charset "utf-8";
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f6f5f5;
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+section {
+  width: 100%;
+  height: 95vh;
+  background-image: url("/images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+nav {
+  width: 90%;
+  z-index: 10;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 0px 5%;
+}
+nav ul {
+  display: flex;
+}
+.toggle {
+  display: none;
+}
+
+nav ul li a {
+  margin: 30px;
+  font-family: myriad pro regular;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 700;
+}
+.logo {
+  font-family: HTML5 Shield;
+  color: #000000;
+  font-size: 30px;
+}
+.active {
+  color: #2d2a2a;
+  font-weight: bold;
+}
+.text-container {
+  position: absolute;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: #6d6d6d;
+  font-size: 22px;
+}
+.text-container p:nth-child(2) {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #1a1a1a;
+  font-size: 60px;
+}
+.text-container p {
+  line-height: 0px;
+  margin: 45px 0px 25px;
+}
+.text-container {
+  position: absolute;
+  left: 13%;
+  top: 42%;
+  transform: translate(-13%, -42%);
+}
+
+.about-container {
+  width: 80%;
+  height: 330px;
+  background-color: #ffffff;
+  border-radius: 20ox;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -7% auto 20px auto;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-container img {
+  height: 250px;
+}
+.about-text {
+  width: 500px;
+}
+.about-text p:nth-child(1) {
+  color: #403e3e;
+  font-family: myriad pro;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 0px;
+}
+.about-text p:nth-child(2) {
+  color: #000000;
+  font-size: 20px;
+  font-family: myriad pro;
+  font-weight: bold;
+  line-height: 10px;
+}
+.about-text p:nth-child(3),
+.about-text p:nth-child(4) {
+  color: #7e7d7d;
+  font-family: calibri;
+  font-size: 20px;
+}
+.hobbies-container {
+  height: 600px;
+  background-color: #ffffff;
+  padding: 2% 10% 0px 10%;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-1,
+.box-2 {
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 4px;
+}
+
+.box-1 {
+  background-image: url("https://img2.pngdownload.id/20180707/gzl/kisspng-logo-engineering-emblem-technique-guild-emblem-5b40a0cd7454a3.2146016415309621254765.jpg");
+}
+.box-2 {
+  background-image: url("https://www.freepnglogos.com/uploads/sport-png/sport-sports-png-transparent-images-30.png");
+}
+
+.box-1 span,
+.box-2 span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: calibri;
+  font-weight: bold;
+}
+.box-1 p:nth-child(2),
+.box-2 p:nth-child(2) {
+  color: #ff7300;
+  font-family: calibri;
+  font-size: 23px;
+  line-height: 0px;
+  font-weight: bold;
+}
+
+.exp-container {
+  height: 500px;
+  background-color: #ffffff;
+  padding: 2% 10% 0px 10%;
+}
+
+.exp-box-container {
+  display: flex;
+  justify-content: space-between;
+}
+.exp-1 {
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 4px;
+}
+.exp-1 {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/13/13706.png");
+}
+.exp-1 span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: calibri;
+  font-weight: bold;
+}
+.exp-1 p:nth-child(2) {
+  color: #ffa600;
+  font-family: calibri;
+  font-size: 23px;
+  line-height: 0px;
+  font-weight: bold;
+}
+.exp-1 p:nth-child(3) {
+  font-family: calibri;
+  color: rgb(255, 102, 0);
+  text-align: center;
+  width: 230px;
+  margin: 0px 0px 20px 0px;
+  font-weight: bold;
+}
+.contact-me {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/assets/images/project\ in\ your\ mind.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-me H3 {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: calibri;
+  font-weight: bold;
+  border-bottom: 2px solid #ffffff;
+}
+.contact-me p {
+  color: white;
+}
+.contact-me {
+  padding-top: 50px;
+}
+input {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+.contact-submit {
+  background-color: #dee7ec;
+  color: #889eab;
+}
+.contact-me button {
+  width: 150px;
+  height: 100px;
+  background-color: #000000;
+  color: #ffff;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+.contact-me button:hover {
+  background-color: #ff0000;
+  transition: all ease 0.5s;
+}
+footer p {
+  font-family: calibri;
+}
+footer p:nth-child(1) {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 10px;
+}
+footer p:nth-child(2) {
+  font-size: 16px;
+  color: #7e7d7d;
+  width: 300px;
+  text-align: center;
+}
+footer {
+  background-color: black;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e3e3;
+  margin: 20px 10px;
+  border-radius: 50%;
+}
+.social-icons {
+  display: flex;
+}
+.social-icons i,
+.social i {
+  color: #000000;
+}
+.social-icons a:hover {
+  background-color: #000000;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  transition: all ease 0.5s;
+}
+.social-icons a:hover i,
+.social a:hover i {
+  color: #ffffff;
+  transition: all ease 0.5s;
+}
+
+.copyright {
+  color: #565555;
+  font-size: 12px;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+.social {
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 0px;
+  background-color: #ffffff;
+  border: 1px solid #cbcbcb;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+.social a:hover {
+  background-color: #000000;
+  transition: all ease 0.5s;
+}
+.social i {
+  font-size: 20px;
+  color: #2b2b2b;
+}
